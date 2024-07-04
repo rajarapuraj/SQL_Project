@@ -1,5 +1,15 @@
 # SQL_Project
 
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Data Sources](#data-sources)
+- [Tools](#tools)
+- [Data Cleaning/Preparation](#data-cleaningpreparation)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Data Analysis using SQL](#data-analysis-using-sql)
+- [Results/Findings](#resultsfindings)
+- [Recommendations](#recommendations)
+
 ### Project Overview
 
 Creating a schema to maintain employee details department wise for an amusement park. I'll be creating tables within the schema, insert data, do some manipulation to manage null values, and finally performing some basic analysis on the dataset to answer key questions of the organization for their business growth.
