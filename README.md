@@ -37,15 +37,16 @@ Then, I've created a schema or database on MYSQL server to perform EDA on the da
 
 In the initial data prepation phase, I've performed the following tasks:
 
-1. Data ingestion
-2. Handling missing values
-3. Data cleaning and formatting
+  A. Removing of duplicates
+	B. Standardizing the data
+	C. Managing Null values or blank values
+	D. Removing empty or unwanted columns	
 
 Please [click here](https://github.com/rajarapuraj/SQL_Project/blob/main/Trachoma_SQL_Project.sql) for detail SQL codes performed on the dataset.
 
 ### Exploratory Data Analysis
 
-EDA involved exploring the employee's salary data to answer key questions, such as:
+EDA involved exploring the trachoma population data to answer key questions, such as:
 
 - How many employee's are there in each department?
 - How many male and female employee's are there in the organization?
@@ -74,7 +75,7 @@ The analysis results are summarized as follows:
 
 ### Recommendations
 
-Based on the analysis, we recommend the following actions:
+Based on the analysis, I recommend the following actions:
 - Reaffirm the organization's commitment to fostering a diverse and inclusive workplace by promoting gender diversity in recruitment.
 - Review and implement a fair pay structure to ensure equitable compensation across all departments.
 
