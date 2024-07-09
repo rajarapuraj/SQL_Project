@@ -57,12 +57,20 @@ EDA involved exploring the trachoma population data to answer key questions, suc
 
 ### Data Analysis using SQL
 
-Here I'm including some interesting codes/features worked with
+Here I'm including one of all the interesting codes/features worked with
 
 ```sql
-SELECT     Department_ID, SUM(Salary) as Total_Amount
-FROM       Employee_Salary
-GROUP BY   Dept_ID;
+WITH Duplicates_CTE AS
+	(
+	SELECT * ,
+	ROW_NUMBER() OVER(
+	PARTITION BY Country, `Code`, `Year`, Trachoma_Risk, Antibiotics_Treatment, Operated) AS Row_Num
+	FROM   trachoma_data_staging
+	)
+	SELECT *
+	FROM   Duplicates_CTE
+	WHERE  Row_Num > 1;
+
 ```
 
 ### Results/Findings
