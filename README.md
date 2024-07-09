@@ -1,9 +1,9 @@
-# SQL_Project
+# Population at Risk For Trachoma_SQL Project
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Data Sources](#data-sources)
 - [Tools](#tools)
+- [Data Sources](#data-sources)
 - [Data Cleaning/Preparation](#data-cleaningpreparation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Analysis using SQL](#data-analysis-using-sql)
@@ -12,24 +12,36 @@
 
 ### Project Overview
 
-Creating a schema to maintain employee details department wise for an amusement park. I'll be creating tables within the schema, insert data, do some manipulation to manage null values, and finally performing some basic analysis on the dataset to answer key questions of the organization for their business growth.
+Neglected Tropical Diseases (NTDs) are a group of infectious diseases causing severe health problems like anemia, blindness, chronic pain, infertility, and disfigurement, predominantly affecting millions in tropical regions such as Africa, Asia, and South and North America. NTDs trap many victims in poverty due to their inability to work and the severe social stigma they face. Despite the existence of affordable interventions and promising new technologies, NTDs remain underfunded and insufficiently addressed in global research and development. Trachoma is one of all the NTDs.
 
-### Data Sources
+Trachoma is a major contagious eye disease caused by the Bacterium Chlamydia trachomatis that can lead to blindness. It's a public health issue in more than 40 countries and is responsible for 1.9 million cases of blindness or visual impairment.
 
-Employee Data: The primary dataset used for this project is the "Employee_Data.sql" file, containing detailed information about their demogrpahics and salary given by the company to each employee within the department.
+This SQL-based project aims to compile and analyze global data on trachoma disease to understand population's risk, impact, and trends year-wise within a country.
 
 ### Tools
 
 - MYSQL Server - Data manipulation and Analysis
   - [Download tool here](https://dev.mysql.com/downloads/installer/)
+  
+### Data Sources
+
+Population at Risk for Trachoma: The primary dataset used for this project is the "population-at-risk-of-trachoma-vs-receiving-treatment.csv" file, containing year wise population count within a specific country/continent that is collected by the World Health Organization - Global Health Observatory (2024). 
+
+I have collected a dataset from [Our World in Data](https://ourworldindata.org/grapher/number-treated-for-trachoma). 
+
+Note: After downloading, open the file and change the column names into a short name according to the data and MYSQL naming convention to make SQL coding short to write and easy to understand. 
+
+Then, I've created a schema or database on MYSQL server to perform EDA on the data. Now, let's do some manipulation on data to manage null values, and finally performing some basic analysis on the dataset to answer key questions of the organization for their business growth.
 
 ### Data Cleaning/Preparation
 
 In the initial data prepation phase, I've performed the following tasks:
 
-1. Data loading and inspection
+1. Data ingestion
 2. Handling missing values
 3. Data cleaning and formatting
+
+Please click here for detail SQL codes performed on the dataset.
 
 ### Exploratory Data Analysis
 
