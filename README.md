@@ -48,11 +48,12 @@ Please [click here](https://github.com/rajarapuraj/SQL_Project/blob/main/Trachom
 
 EDA involved exploring the trachoma population data to answer key questions, such as:
 
-- How many employee's are there in each department?
-- How many male and female employee's are there in the organization?
-- What is the total amount given as a salary within each department?
-- Which department employee's are high salaried?
-- Which department employee is high salaried? 
+1. Number of population are at risk to trachoma year wise within a country?
+2. Number of population are treated with antibiotics for trachoma year wise within a country?
+3. Number of population are get operated for trachoma disease year wise within a country?
+4. What is the average population at risk for trachoma?
+5. What is the average population treated for trachoma?
+6. What is the average population operated for trachoma?
 
 ### Data Analysis using SQL
 
