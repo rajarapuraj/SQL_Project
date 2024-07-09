@@ -158,6 +158,17 @@ D. Remove any empty or unwanted columns
 	GROUP BY Country, `Year`
 	ORDER BY Country ASC, `Year` ASC;
 
+	SELECT 
+    	MAX(Total_Trachoma_Risk) AS Max_Trachoma_Risk,
+    	MIN(Total_Trachoma_Risk) AS Min_Trachoma_Risk
+	FROM 
+    		(SELECT Country, 
+        		SUM(Trachoma_Risk) AS Total_Trachoma_Risk
+     		FROM trachoma_data_staging
+     		GROUP BY Country
+     		HAVING 
+     		SUM(Trachoma_Risk) > 0) AS subquery;
+
 -- Number of population are treated with antibiotics for trachoma year wise within a country?
 	SELECT   `Year`, SUM(Antibiotics_Treatment) AS Total_Antibiotics_Treatment
 	FROM     trachoma_data_staging
@@ -169,6 +180,17 @@ D. Remove any empty or unwanted columns
 	GROUP BY Country, `Year`
 	ORDER BY Country ASC, `Year` ASC;
 
+	SELECT 
+    	MAX(Total_Antibiotics_Treatment) AS Max_Antibiotics_Treatment,
+    	MIN(Total_Antibiotics_Treatment) AS Min_Antibiotics_Treatment
+	FROM 
+    		(SELECT Country, 
+        		SUM(Antibiotics_Treatment) AS Total_Antibiotics_Treatment
+     		FROM trachoma_data_staging
+     		GROUP BY Country
+     		HAVING 
+     		SUM(Antibiotics_Treatment) > 0) AS subquery;
+
 -- Number of population are get operated for trachoma disease year wise within a country?
 	SELECT   `Year`, SUM(Operated) AS Total_Operated
 	FROM     trachoma_data_staging
@@ -179,6 +201,17 @@ D. Remove any empty or unwanted columns
 	FROM     trachoma_data_staging
 	GROUP BY Country, `Year`
 	ORDER BY Country ASC, `Year` ASC;
+
+	SELECT 
+    	MAX(Total_Operated) AS Max_Operated,
+    	MIN(Total_Operated) AS Min_Operated
+	FROM 
+    		(SELECT Country, 
+        		SUM(Operated) AS Total_Operated
+     		FROM trachoma_data_staging
+     		GROUP BY Country
+     		HAVING 
+     		SUM(Operated) > 0) AS subquery;
 
 -- What is the avg, min, max, stddev of population at risk for trachoma?
 	SELECT 
