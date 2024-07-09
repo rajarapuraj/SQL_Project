@@ -41,7 +41,7 @@ In the initial data prepation phase, I've performed the following tasks:
 2. Handling missing values
 3. Data cleaning and formatting
 
-Please click here for detail SQL codes performed on the dataset.
+Please [click here](https://github.com/rajarapuraj/SQL_Project/blob/main/Trachoma_SQL_Project.sql) for detail SQL codes performed on the dataset.
 
 ### Exploratory Data Analysis
 
