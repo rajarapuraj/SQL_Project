@@ -1,4 +1,4 @@
-# Population at Risk For Trachoma_SQL Project
+# Population at Risk For Trachoma
 
 ## Table of Contents
 - [Project Overview](#project-overview)
