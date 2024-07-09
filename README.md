@@ -31,7 +31,7 @@ I have collected a dataset from [Our World in Data](https://ourworldindata.org/g
 
 Note: After downloading, open the file and change the column names into a short name according to the data and MYSQL naming convention to make SQL coding short to write and easy to understand. 
 
-Then, I've created a schema or database on MYSQL server to perform EDA on the data. Now, let's do some manipulation on data to manage null values, and finally performing some basic analysis on the dataset to answer key questions of the organization for their business growth.
+Then, I've created a schema or database on MYSQL server to perform EDA on the data. Now, let's do some manipulation on data to manage null values, and finally performing some basic analysis on the dataset to answer key questions about the trachoma population and to take necessary action further.
 
 ### Data Cleaning/Preparation
 
