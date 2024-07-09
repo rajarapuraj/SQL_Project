@@ -16,7 +16,7 @@ Neglected Tropical Diseases (NTDs) are a group of infectious diseases causing se
 
 Trachoma is a major contagious eye disease caused by the Bacterium Chlamydia trachomatis that can lead to blindness. It's a public health issue in more than 40 countries and is responsible for 1.9 million cases of blindness or visual impairment.
 
-This SQL-based project aims to compile and analyze global data on trachoma disease to understand population's risk, impact, and trends year-wise within a country.
+This SQL-based project aims to compile and analyze sample of global data on trachoma disease to understand population's risk, impact, and trends year-wise within a country.
 
 ### Tools
 
