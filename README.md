@@ -77,16 +77,12 @@ WITH Duplicates_CTE AS
 
 The analysis results are summarized as follows:
 
-1. A total of 12 employee's working in the organization.
-2. Female employee's are more than male employee's.
-3. The employee's within *Department* are high salaried.
-4. Within the organization, Steven Jhonson from *department* is high salaried employee.
+1. Almost 1756 million people are at 
 
 ### Recommendations
 
 Based on the analysis, I recommend the following actions:
-- Reaffirm the organization's commitment to fostering a diverse and inclusive workplace by promoting gender diversity in recruitment.
-- Review and implement a fair pay structure to ensure equitable compensation across all departments.
+- write here
 
 
 
