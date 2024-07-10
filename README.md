@@ -40,9 +40,19 @@ In the initial data prepation phase, I've performed the following tasks:
   A. Removing of duplicates
 	B. Standardizing the data
 	C. Managing Null values or blank values
-	D. Removing empty or unwanted columns	
+	D. Removing empty or unwanted columns
+ 
 ```sql
-
+	WITH Duplicates_CTE AS
+		(
+		  SELECT * ,
+		  ROW_NUMBER() OVER(
+		  PARTITION BY Country, `Code`, `Year`, Trachoma_Risk, Antibiotics_Treatment, Operated) AS Row_Num
+		  FROM   trachoma_data_staging
+		)
+	SELECT *
+	FROM   Duplicates_CTE
+	WHERE  Row_Num > 1;
 ```
 
 Please [click here](https://github.com/rajarapuraj/SQL_Project/blob/main/Trachoma_SQL_Project.sql) for detail SQL codes performed on the dataset.
@@ -63,17 +73,13 @@ EDA involved exploring the trachoma population data to answer key questions, suc
 Here I'm including one of all the interesting codes/features worked with
 
 ```sql
-WITH Duplicates_CTE AS
-	(
-	SELECT * ,
-	ROW_NUMBER() OVER(
-	PARTITION BY Country, `Code`, `Year`, Trachoma_Risk, Antibiotics_Treatment, Operated) AS Row_Num
-	FROM   trachoma_data_staging
-	)
-	SELECT *
-	FROM   Duplicates_CTE
-	WHERE  Row_Num > 1;
-
+	SELECT Country, Total_Trachoma_Risk AS High_Trachoma_Risk
+	FROM (
+	    SELECT   Country, SUM(Trachoma_Risk) AS Total_Trachoma_Risk
+	    FROM     trachoma_data_staging
+	    GROUP BY Country
+	) AS Subquery
+	ORDER BY Total_Trachoma_Risk DESC;
 ```
 
 ### Results/Findings
