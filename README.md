@@ -41,6 +41,9 @@ In the initial data prepation phase, I've performed the following tasks:
 	B. Standardizing the data
 	C. Managing Null values or blank values
 	D. Removing empty or unwanted columns	
+```sql
+
+```
 
 Please [click here](https://github.com/rajarapuraj/SQL_Project/blob/main/Trachoma_SQL_Project.sql) for detail SQL codes performed on the dataset.
 
@@ -48,12 +51,12 @@ Please [click here](https://github.com/rajarapuraj/SQL_Project/blob/main/Trachom
 
 EDA involved exploring the trachoma population data to answer key questions, such as:
 
-1. Number of population are at risk to trachoma year wise within a country?
-2. Number of population are treated with antibiotics for trachoma year wise within a country?
-3. Number of population are get operated for trachoma disease year wise within a country?
-4. What is the average population at risk for trachoma?
-5. What is the average population treated for trachoma?
-6. What is the average population operated for trachoma?
+1. What is the total population that is at risk for trachoma?
+2. Which country population is at high risk?
+3. What is the total population treated with antibiotics for trachoma?
+4. Which country population are treated high with antibiotics?
+5. What is the total population get operated for trachoma?
+6. Which country population is high operated for trachoma?
 
 ### Data Analysis using SQL
 
