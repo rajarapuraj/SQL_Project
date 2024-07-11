@@ -89,14 +89,14 @@ Here I'm including one of all the interesting codes/features worked with
 
 ### Results/Findings
 
-The analysis results are summarized as follows:
-
-1. Almost 1756 million people are at 
+Finally, the exploratory data analysis (EDA) on the trachoma dataset provided critical insights into the global landscape of this neglected tropical disease. The analysis reveals that a total of 5.27 billion people are at risk for trachoma worldwide, with Africa having the highest at-risk population and Algeria the lowest. Out of the at-risk population, 643.5 million people have been treated with antibiotics, with the highest number of treatments occurring in Africa and the lowest in Oman. Additionally, 38.9 million people have undergone surgical operations for trachoma, with Africa again leading and Vanuatu at the lowest. Despite these efforts, the overall number of trachoma patients has been gradually decreasing from 2013 to 2022, with the exception of a spike in 2018. These findings underscore the importance of sustained investment in public health strategies and interventions to further reduce the burden of trachoma globally.
 
 ### Recommendations
 
 Based on the analysis, I recommend the following actions:
-- write here
+- Need to increase funding and resources for high-risk regions like Africa, which ensures the distribution of antibiotics and surgical interventions, ultimately reducing the prevalence of the disease.
+- Should strengthen public health initiatives by focusing on increasing awareness, improving sanitation, and providing access to necessary medical treatments in low-treatment countries like Oman and Vanuatu.
+- Implement continuous monitoring and rapid response mechanisms to address spikes in trachoma cases, particularly highlighted by the 2018 increase, ensuring sustained reductions through robust surveillance systems.
 
 
 
