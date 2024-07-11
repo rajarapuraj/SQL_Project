@@ -37,6 +37,16 @@ Then, I've created a schema or database on MYSQL server to perform EDA on the da
 
 In the initial data prepation phase, I've performed the following tasks:
 
+A. Removing of duplicates 
+
+B. Stadardizing the data 
+
+C. Managing Null values or blank values 
+
+D. Removing empty or unwanted columns 
+
+Here is the sample code...
+
 ```sql
 	WITH Duplicates_CTE AS
 		(
